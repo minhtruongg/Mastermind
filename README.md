@@ -8,8 +8,8 @@ This is my semester project for Programming I. I made a Mastermind game where yo
 Files in This Project
 mastermind.py - This is the main game file (190 lines of code)
 test_mastermind.py - Tests to make sure my code works
-USER_GUIDE.docx - Instructions on how to play the game
-DEVELOPER_DOCS.docx - Explains how I wrote the code
+USER_GUIDE.md - Instructions on how to play the game
+DEVELOPER_DOCS.md - Explains how I wrote the code
 README.md - This file
 
 How to Run My Game
