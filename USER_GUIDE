@@ -1,0 +1,118 @@
+Mastermind Game - User Guide
+Overview
+Mastermind is a code-breaking game where you try to guess a secret 4-color code. After each guess, you receive feedback to help narrow down the possibilities.
+How to Run the Game
+Requirements
+Python 3.x installed on your computer
+tkinter library (usually comes with Python)
+
+Starting the Game
+1.Save the code as mastermind.py
+2.Open terminal/command prompt
+3.Run: python mastermind.py
+4.The game window will appear
+
+
+How to Play
+Game Objective
+Guess the secret 4-color code in 10 attempts or fewer.
+
+
+Step-by-Step Instructions
+1. Select Colors
+Click on the color buttons (Red, Blue, Green, Yellow, Orange, Purple)
+Each click adds that color to your current guess
+You need to select exactly 4 colors
+
+2. Build Your Guess
+Your selected colors appear in the gray circles at the top
+Colors can repeat (e.g., Red, Red, Blue, Green is valid)
+If you make a mistake, click "Clear" to start over
+
+3. Get Help (Optional)
+Click "Get Hint" button before submitting
+The game suggests a possible guess based on previous attempts
+Hints are especially helpful after a few guesses
+
+4. Submit Your Guess
+Click "Submit" when you have 4 colors selected
+The game will show your guess in the history section below
+
+5. Read the Feedback
+Black pegs: Number of colors in the CORRECT position
+White pegs: Number of colors that are correct but in the WRONG position
+Example:
+Secret code: Red, Blue, Green, Yellow
+Your guess: Red, Green, Blue, Orange
+Feedback: Black: 1, White: 2 
+Red is in correct position (1 black)
+Blue and Green are correct colors but wrong positions (2 white)
+Orange is not in the code
+
+6. Keep Guessing
+Use the feedback to make better guesses
+You have 10 total attempts
+Try to solve it in as few guesses as possible!
+Winning and Losing
+
+You Win When:
+You guess all 4 colors in the correct positions
+Feedback shows: Black: 4, White: 0
+A congratulations message appears with your score
+
+You Lose When:
+You use all 10 attempts without guessing correctly
+The secret code is revealed
+
+Playing Again
+After each game, you can click "Yes" to play again
+Or click "No" to exit the game
+
+
+Tips for Better Play
+1.Start with diverse colors: Try using 4 different colors in your first guess
+2.Use the hint wisely: Hints become more accurate after 2-3 guesses
+3.Pay attention to patterns: If you get "Black: 2", two positions are locked!
+4.Eliminate impossible combinations: Use white pegs to know which colors exist
+5.Don't repeat failed guesses: Keep track of what doesn't work
+
+
+Example Game Session
+Attempt 1: Red, Blue, Green, Yellow
+Feedback: Black: 1, White: 2
+(One color is in right spot, two others are in wrong spots)
+
+Attempt 2: Red, Green, Blue, Orange
+Feedback: Black: 2, White: 1
+(Two colors are now correct! One more is in wrong position)
+
+Attempt 3: Red, Green, Yellow, Blue
+Feedback: Black: 3, White: 0
+(Three in correct positions! Only one position to change)
+
+Attempt 4: Red, Green, Yellow, Purple
+Feedback: Black: 4, White: 0
+YOU WIN! Secret code was: Red, Green, Yellow, Purple
+
+
+
+Troubleshooting
+Problem: Can't click Submit button
+Solution: Make sure you've selected exactly 4 colors
+
+Problem: Colors won't add to guess
+Solution: Clear your current guess (max 4 colors allowed)
+
+Problem: Game window doesn't appear
+Solution: Make sure Python and tkinter are properly installed
+
+Problem: Hint doesn't seem helpful
+Solution: Hints work better after you have some feedback. Try making 2-3 guesses first.
+
+
+Controls Summary
+Button	Action
+Color buttons (Red, Blue, etc.)	Add color to current guess
+Clear	Remove all colors from current guess
+Get Hint	Show suggested guess based on history
+Submit	Submit your 4-color guess
